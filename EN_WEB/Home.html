@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+<title>Scout Homepage</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        direction: ltr; /* Change direction to left-to-right */
+    }
+    .banner {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/background.png'); 
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Content Styles */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        cursor: default;
+        font-size: 35px;
+        z-index: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../Photos/new logo.png" class="logo">
+            <ul>
+                <li><a href="Home.html" id="line">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Skills</a>
+                    <div class="dropdown-content">
+                        <a href="Codes.html">Scouting Codes</a>
+                        <a href="TrackingTheTrail.html">Tracking The Trail</a>
+                        <a href="TheKnot.html">The Knot</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Information</a>
+                    <div class="dropdown-content">
+                        <a href="LordStephenSmith.html">Lord Stephen Smith Baden Powell</a>
+                        <a href="CreatingScout.html">Creating Scout</a>
+                        <a href="Dates.html">Dates</a>
+                        <a href="TheBadgeAndTheMotto.html">The Badge and The Motto</a>
+                        <a href="ThePrinciples.html">The Principles</a>
+                    </div>
+                </li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Information About Scouting</h1>
+            <p>Enhance or build your scouting skills</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation of Scouting</title>
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: ltr;
+            animation: fadeIn ease-in-out 1s;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_A_group_of_scouts_in_uniform_on_a_morning_hike_located_2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop ease-in-out 1s;
+        }
+
+        h1, h2, p {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 48px;
+            animation: fadeInLeft ease-in-out 1s;
+        }
+
+        h2 {
+            font-size: 40px;
+            animation: fadeInRight ease-in-out 1s;
+        }
+
+        p {
+            font-size: 28px; 
+            animation: fadeIn ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1; /* Added to keep navbar above the content */
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Content Styles */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        cursor: default;
+        font-size: 35px;
+        z-index: 0; /* Ensure content is behind navbar */
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Photos/new logo.png" class="logo">
+        <ul>
+            <li><a href="Home.html" id="line">Home</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Skills</a>
+                <div class="dropdown-content">
+                    <a href="Codes.html">Scout Codes</a>
+                    <a href="TrackingTheTrail.html">Tracking the Trail</a>
+                    <a href="TheKnot.html">The Knot</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Information</a>
+                <div class="dropdown-content">
+                    <a href="LordStephenSmith.html">Lord Stephen Smith Baden Powell</a>
+                    <a href="CreatingScout.html">Creating Scouts</a>
+                    <a href="Dates.html">Dates</a>
+                    <a href="TheBadgeAndTheMotto.html">The Badge and The Motto</a>
+                    <a href="ThePrinciples.html">The Principles</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Foundation of Scouting</h1>
+        <p>Scouting was founded in 1907 by Robert Baden-Powell, who was an officer in the British Army in South Africa. During his service there, Baden-Powell recognized the importance of developing youth skills in survival and community service. Baden-Powell organized the first scouting group in South Africa and began developing scouting principles and activities focusing on challenge, adventure, and community service.</p>
+        <p>The concept of scouting was quickly adopted and expanded widely around the world. In 1908, Baden-Powell founded the World Scouting Movement and presented his famous book "Scouting for Boys," which contains the principles and practices of scouting. Since then, scouting has grown to become a global movement aimed at developing active and responsible youth through practical learning, community service, and adventure in nature.</p>
+        <p>Scouting relies on a set of core principles such as duty to others, helping others, belief in God, self-discipline, taking responsibility, and openness to the world. Scouting activities range from camping and hiking in nature to community service and learning life skills.</p>
+        <p>Scouting exists today in most countries around the world and forms a wide network of local, national, regional, and international organizations working to develop youth and promote values of citizenship, cooperation, and social responsibility.</p>
+    </div>
+</body>
+</html>

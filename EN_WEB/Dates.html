@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+    <style>
+        body {
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 line-height: 1.6;
+                 margin: 0;
+                 padding: 0;
+                 direction: ltr;
+                 animation: fadeIn ease-in-out 1s;
+                 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_Three_boys_dressed_in_scout_uniforms_are_sitting_in_a_0.jpg'); 
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 background-position: center;
+             }
+     
+             .container {
+                 max-width: 800px;
+                 margin: 0 auto;
+                 padding: 20px;
+                 background-color: rgba(255, 255, 255, 0.1);
+                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                 animation: slideInFromTop ease-in-out 1s;
+             }
+     
+             h1, h2, p {
+                 color: rgb(255, 255, 255);
+                 font-weight: bolder;
+             }
+     
+             h1 {
+                 font-size: 24px;
+                 animation: fadeInLeft ease-in-out 1s;
+             }
+     
+             h2 {
+                 font-size: 20px;
+                 animation: fadeInRight ease-in-out 1s;
+             }
+     
+             p {
+                 animation: fadeIn ease-in-out 1s;
+             }
+     
+             @keyframes fadeIn {
+                 0% {
+                     opacity: 0;
+                 }
+                 100% {
+                     opacity: 1;
+                 }
+             }
+     
+             @keyframes fadeInLeft {
+                 0% {
+                     opacity: 0;
+                     transform: translateX(-50px);
+                 }
+                 100% {
+                     opacity: 1;
+                     transform: translateX(0);
+                 }
+             }
+     
+             @keyframes fadeInRight {
+                 0% {
+                     opacity: 0;
+                     transform: translateX(50px);
+                 }
+                 100% {
+                     opacity: 1;
+                     transform: translateX(0);
+                 }
+             }
+     
+             @keyframes slideInFromTop {
+                 0% {
+                     opacity: 0;
+                     transform: translateY(-100px);
+                 }
+                 100% {
+                     opacity: 1;
+                     transform: translateY(0);
+                 }
+             }
+         .banner {
+             width: 100%;
+             min-height: 100vh; /* Changed height to min-height for content responsiveness */
+             position: relative;
+         }
+         .navbar {
+             width: 85%;
+             margin: auto;
+             padding: 35px 0;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             z-index: 1; /* Added to keep navbar above the content */
+         }
+         .logo {
+             width: 120px;
+             cursor: pointer;
+         }
+         .navbar ul {
+             margin: 0;
+             padding: 0;
+             list-style: none;
+         }
+         .navbar ul li {
+             display: inline-block;
+             margin-right: 20px;
+             position: relative;
+         }
+         .navbar ul li a {
+             text-decoration: none;
+             color: #fff;
+             text-transform: uppercase;
+             cursor: pointer;
+         }
+         .navbar ul li a:hover {
+             color: #eee;
+         }
+         .navbar ul li#line::after {
+             content: '';
+             height: 3px;
+             width: 0%;
+             background: rgb(110,32, 160);
+             position: absolute;
+             left: 0;
+             bottom: -5px;
+             transition: 0.5s;
+             border-radius: 2rem;
+         }
+         .navbar ul li#line:hover::after {
+             width: 100%;
+         }
+     
+         /* Styles for Dropdown */
+         .dropdown {
+             position: relative;
+             display: inline-block;
+         }
+         .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: rgba(255, 255, 255, 0.09);
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+         }
+         .dropdown-content a {
+             padding: 12px 10px;
+             text-decoration: none;
+             display: block;
+             font-size: 15px;
+         }
+         .dropdown-content a:hover {
+             background-color: rgba(255, 255, 255, 0.09);
+         }
+         .dropdown:hover .dropdown-content {
+             display: block;
+         }
+         
+         </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../Photos/new logo.png" class="logo">
+            <ul>
+                <li><a href="Home.html" id="line">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Skills</a>
+                    <div class="dropdown-content">
+                        <a href="Codes.html">Scout Codes</a>
+                        <a href="TrackingTheTrail.html">Tracking the Trail</a>
+                        <a href="TheKnot.html">The Knot</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Information</a>
+                    <div class="dropdown-content">
+                        <a href="LordStephenSmith.html">Lord Baden Powell</a>
+                        <a href="CreatingScout.html">Scout Creation</a>
+                        <a href="Dates.html">Dates</a>
+                        <a href="TheBadgeAndTheMotto.html">The Badge and The Motto</a>
+                        <a href="ThePrinciples.html">The Principles</a>
+                    </div>
+                </li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2><strong>Lord Baden Powell and the History of Scouting</strong></h2>
+            <p><strong>1857:</strong> Birth of Lord Robert Stevenson Smyth Baden-Powell on February 22</p>
+            <p><strong>1876:</strong> Lord Baden-Powell joined the British Army</p>
+            <p><strong>1876:</strong> Commissioned as a Captain in the British Army</p>
+            <p><strong>1899:</strong> Published a book about scouting in the British Army</p>
+            <p><strong>1907:</strong> Led a experimental camp with 20 boys</p>
+            <p><strong>1907:</strong> Founded Boy Scouts by Lord Baden-Powell</p>
+            <p><strong>1907:</strong> Established the first Scout troop on March 1</p>
+            <p><strong>1909:</strong> First scout rally in London attracted over 11,000 scouts</p>
+            <p><strong>1910:</strong> Initiated scouting program for girls under the guidance of his sister Agnes</p>
+            <p><strong>1912:</strong> Scouting started in Syria and Lebanon</p>
+            <p><strong>1912:</strong> Married Olave Soames</p>
+            <p><strong>1912:</strong> Scouting started in Palestine</p>
+            <p><strong>1913:</strong> Olave gave birth to their first child, Peter</p>
+            <p><strong>1914:</strong> Organized scouting movement to ensure stability during World War I</p>
+            <p><strong>1914:</strong> Established Rover Scouts</p>
+            <p><strong>1914:</strong> Scouting started in Egypt</p>
+            <p><strong>1915:</strong> Olave gave birth to their second child, Heather</p>
+            <p><strong>1916:</strong> Scouting started in Sudan</p>
+            <p><strong>1917:</strong> Olave gave birth to their third child, Betty</p>
+            <p><strong>1918:</strong> Formation of Rover Scouts for young adults</p>
+            <p><strong>1918:</strong> Scouting started in Iraq</p>
+            <p><strong>1920:</strong> First World Scout Jamboree with 8,000 scouts from 34 countries</p>
+            <p><strong>1920:</strong> Lord Baden-Powell declared Chief Scout of the world</p>
+            <p><strong>1926:</strong> Formation of Scout Handicapped</p>
+            <p><strong>1927:</strong> Scouting started in Jordan</p>
+            <p><strong>1928:</strong> Formation of Sea Scouts</p>
+            <p><strong>1930:</strong> Formation of Rover Scout Crews, and Olave becomes World Chief Guide</p>
+            <p><strong>1941:</strong> Death of Lord Robert Stevenson Smyth Baden-Powell</p>
+            <p><strong>1942:</strong> Scouting started in Saudi Arabia</p>
+            <p><strong>1954:</strong> Scouting started in Libya</p>
+            <p><strong>1977:</strong> Scouting started in United Arab Emirates</p>
+        </div>
+    </div>
+</body>
+</html>

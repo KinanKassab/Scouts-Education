@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            animation: fadeIn ease-in-out 1s;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_Lord_BadenPowell_wearing_a_scout_uniform_in_a_camp_1.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop ease-in-out 1s;
+        }
+
+        h1, h2, p {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 48px;
+            animation: fadeInLeft ease-in-out 1s;
+        }
+
+        h2 {
+            font-size: 40px;
+            animation: fadeInRight ease-in-out 1s;
+        }
+
+        p {
+            font-size: 28px; 
+            animation: fadeIn ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1; /* Added to keep navbar above the content */
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Content Styles */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        cursor: default;
+        font-size: 35px;
+        z-index: 0; /* Ensure content is behind navbar */
+    }
+    </style>
+    <title>اللورد روبرت بادن باول</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Photos/new logo.png" class="logo">
+        <ul>
+            <li><a href="Home.html" id="line">الرئيسية</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">المهارات الكشفية</a>
+                <div class="dropdown-content">
+                    <a href="Codes.html">الشيفرات </a>
+                    <a href="TrackingTheTrail.html">تتبع الأثر</a>
+                    <a href="TheKnot.html">العقد</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">المعلومات</a>
+                <div class="dropdown-content">
+                    <a href="LordStephenSmith.html">لورد ستيفن سميث بادن باول</a>
+                    <a href="CreatingScout.html">تأسيس الحركة الكشفية</a>
+                    <a href="Dates.html">التواريخ</a>
+                    <a href="TheBadgeAndTheMotto.html">الشارة والشعار</a>
+                    <a href="ThePrinciples.html">القوانين</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">اتصل بنا</a></li>
+        </ul>
+    </div>
+<div class="container">
+    <h1>اللورد روبرت بادن باول (22 فبراير 1857 - 8 يناير 1941)</h1>
+    <h2>ضابط بالجيش البريطاني وكاتب ومؤسس الحركة الكشفية.</h2>
+
+    <h1>طفولته</h1>
+    <p>ولد «روبرت ستيفنس سميث بادن باول» في 22 فبراير عام 1857، وكان السادس من الذكور والثامن من مجموع الأطفال العشرة لريفريند بادن باول في جامعة أكسفورد. أما والده الروحي فهو روبرت ابن جورج ستيفن سن مخترع السكك الحديدية.</p>
+
+    <p>توفي والد بادن باول وقت كان في الثالثة من عمره، ولم يترك شيئًا لأسرته. تلقى بادن باول علومه الأولى من والدته ثم التحق بعد ذلك بمدرسة روز هيل في تونبريدج في ويلز، إذ حصل على منحة لدى مدرسة شارتر هاوس التي كانت في لندن حينما التحق بها ثم سرعان ما انتقلت أثناء وجوده فيها إلى غود المينغ في مقاطعة سوري من الريف الإنجليزي، حيث واتته الفرصة ليكون قريبًا من حضن الطبيعة التي أصبح لها تأثير عظيم في حياته في ما بعد.</p>
+
+    <p>وكان كثيرًا ما يختبئ من المدرسة في الغابة التي تحيط بها، كما كان ينطلق في صيد الأرانب البرية وطهوها إذ كان طاهيًا ماهرًا. واستفاد بادن باول من العطلات وكان يبحث عن المغامرة مع أشقائه دائمًا. وفي إحدى العطلات قاموا برحلة استكشافية بالقارب حول الساحل الجنوبي لانجلترا، وفي رحلة أخرى استشكفوا منابع نهر التايمز بقارب من الكانوي، وكانت مثل تلك الرحلات نادرة الحدوث للفتيان الصغار ذلك الوقت.</p>
+
+    <p>كتب فيما بعد عن هذه الفترة يقول: «لقد تحققت في أثنائها في بعض ما يحيط بنا من عجائب، وتكشف لناظري ما في الغابة والشمس من جمال».</p>
+
+    <h1>حياته العسكرية</h1>
+    <p>اجرى امتحان دخول الجيش بدون علم أهله، ونجح بتفوق فعين فوراً برتبة ضابط وقد برهن على انه جندي لامع، وسرعان ما رقي.... أحرز نجاحا مدهشا...</p>
+
+    <p>ولعل أشهر نجاح عسكري أحرزه الكولونيل «بادن باول» كان عندما حاصره وألفا من رجاله تسعة آلاف رجل من ثائري البوير (شعوب من اصل هولندي) في مدينة مافكنغ في جنوب أفريقيا. دام حصار مدينة مافكنغ 217 يوما إلى ان وصلت إليها التعزيزات.... وكان له من العمر 46 سنة.</p>
+
+    <p>استطاع بادن باول وجنوده الصمود بفضل التكتيكات المميزة التي لجأ إليها، فبالرغم من عدم امتلاكه سوى لمدفعين فقد لجأ إلى نشر جذوع الأشجار في محيط المدينة، وأخذ ينقل المدفعين من مكان إلى اخر مطلقاً قذيفة من كل مكان. فظن المهاجمون انهم يمتلكون ترسانة مدفعية كاملة. كما أمر جنوده بالحركة الدائمة في الموقع وبإصدار أكبر ضجة ممكنة ليوهموا المهاجمين بان عدد الجنود في الحصن كبير. وأسس فرقة استطلاعية دعاها الكشافة. كانت مهمتها القيام باستكشاف خطوط العدو. وقد استعمل في وقت لاحق بعض هذه التقنيات في تدريب الكشافة. وحين عودته إلى الوطن عام 1900 صادف نجاحاً وشعبية باعتباره بطلاً قومياً، كما وجد أن الكتيب الصغير الذي أعده لجنوده (مساعدات في النواحي الكشفية) استخدمه قادة الشباب والمدرسون في أنحاء البلاد في تدريبهم.</p>
+
+    <h1>بداية المغامرة</h1>
+    <p>عند عودة «بادن باول» إلى بريطانيا اندهش لأن ألفتيان كانوا يقبلون على شراء كتابه وأطلقوا على انفسهم اسم «فتيان الكشافة». وبذلك شكلوا جماعات صغيرة لممارسة الكشفية.و نتيجة لذلك قرر «بادن باول» ان يعيد النظر في الكتيب ليجعله أكثر ملائمة للشباب. وفي صيف 1907 كان مستعدا لوضع افكاره موضع التجربة.</p>
+
+    <p>في شهر آب 1907 أقام «بادن باول» مع مجموعة من مساعديه الكبار مخيما في جزيرة براونسي Brown Sea بيول ماربر دورست.</p>
+
+    <p>قسم «بادن باول» الفتيان إلى مجموعات عهد بكل واحد منها إلى فتى متقدم في السن. واستمتع الفتيان بأوقاتهم في المخيم في السباحة، والتعقب خفية، وممارسة الألعاب والإصغاء حول النار الليلية إلى بادن باول وهو يقص عليهم مغامراته.</p>
+
+    <p>وفي عام 1908 أصدر كتاب «الكشافة للفتيان» الذي ترجم إلى أكثر من 35 لغة وانتشرت الكشافة بسرعة في كل أنحاء الامبراطورية البريطانية، وكذا في الدول الأخرى حتى توطدت عملياً في كل جزء من العالم، ثم استؤصلت بعد ذلك من بعض الدول التي أصبحت تحت الحكم الشمولي.</p>
+
+    <p>عام 1910 وضع «بادن باول» وشقيقته برنامجا للفتيات، فانطلقت حركة المرشدات. وفي العام ذاته انسحب «بادن باول» من الجيش.</p>
+
+    <p>وفي عام 1912 تزوج «اوليف سانز كلير سومس» التي شاركته اهتمامه بالشباب. وأصبح «بادن باول» في أول مهرجان كشفي دولي عام 1920 قائد كشافة العالم. وجعل منه عام 1929 الملك جورج الخامس، نبيلا (لورد) فأصبح لورد «بادن باول» اوف غلويل.وتوفي عام 1941 وكان عمره 83 سنة.</p>
+    </div>
+</body>
+</html>

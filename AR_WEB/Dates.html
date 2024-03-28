@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التواريخ</title>
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+    <style>
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            animation: fadeIn ease-in-out 1s;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_Three_boys_dressed_in_scout_uniforms_are_sitting_in_a_0.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop ease-in-out 1s;
+        }
+
+        h1, h2, p {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 28px;
+            animation: fadeInLeft ease-in-out 1s;
+        }
+
+        h2 {
+            font-size: 24px;
+            animation: fadeInRight ease-in-out 1s;
+        }
+
+        p {
+            font-size: 20PX;
+            animation: fadeIn ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .banner {
+        width: 100%;
+        min-height: 100vh; /* Changed height to min-height for content responsiveness */
+        position: relative;
+    }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1; /* Added to keep navbar above the content */
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../Photos/new logo.png" class="logo">
+            <ul>
+                <li><a href="Home.html" id="line">الرئيسية</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">المهارات الكشفية</a>
+                    <div class="dropdown-content">
+                        <a href="Codes.html">الشيفرات </a>
+                        <a href="TrackingTheTrail.html">تتبع الأثر</a>
+                        <a href="TheKnot.html">العقد</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">المعلومات</a>
+                    <div class="dropdown-content">
+                        <a href="LordStephenSmith.html">لورد ستيفن سميث بادن باول</a>
+                        <a href="CreatingScout.html">تأسيس الحركة الكشفية</a>
+                        <a href="Dates.html">التواريخ</a>
+                        <a href="TheBadgeAndTheMotto.html">الشارة والشعار</a>
+                        <a href="ThePrinciples.html">القوانين</a>
+                    </div>
+                </li>
+                <li><a href="Contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+            <div class="container">
+                <h2 class="text-center mb-4" style="font-size: 40px; color: rgb(255, 255, 255);"><strong>لورد بادن باول وتاريخ الكشافة</strong></h2>
+                    <!-- بداية الإدخالات في التاريخ -->
+                    <p><strong>1857:</strong> ميلاد اللورد روبرت ستيفنسون سميث بادن باول في 22 فبراير</p>
+                    <p><strong>1876:</strong> التحاق اللورد بادن باول بالجيش البريطاني</p>
+                    <p><strong>1876:</strong> أصبح نقيبًا في الجيش البريطاني</p>
+                    <p><strong>1899:</strong> نشر كتاب عن الكشافة في الجيش البريطاني</p>
+                    <p><strong>1907:</strong> قاد معسكرًا تجريبيًا مع 20 صبيًا</p>
+                    <p><strong>1907:</strong> أسس كشافة الأولاد بواسطة اللورد بادن باول</p>
+                    <p><strong>1907:</strong> أسس أول فرقة كشفية في 1 مارس</p>
+                    <p><strong>1909:</strong> أول مهرجان كشفي في لندن جذب أكثر من 11,000 كشاف</p>
+                    <p><strong>1910:</strong> بدء برنامج الكشافة للفتيات تحت إشراف أخته آجنس</p>
+                    <p><strong>1912:</strong> بداية الكشافة في سوريا ولبنان</p>
+                    <p><strong>1912:</strong> تزوج اللورد بادن باول من الآنسة أولاف</p>
+                    <p><strong>1912:</strong> بداية الكشافة في فلسطين</p>
+                    <p><strong>1913:</strong> أنجبت زوجته أول طفل لهما، بيتر</p>
+                    <p><strong>1914:</strong> تنظيم حركة الكشافة لضمان الاستقرار خلال الحرب العالمية الأولى</p>
+                    <p><strong>1914:</strong> تأسيس فرقة الكشافة للشبان</p>
+                    <p><strong>1914:</strong> بداية الكشافة في مصر</p>
+                    <p><strong>1915:</strong> أنجبت زوجته طفلهما الثاني، هيث</p>
+                    <p><strong>1916:</strong> بداية الكشافة في السودان</p>
+                    <p><strong>1917:</strong> أنجبت زوجته طفلهما الثالث، بيتي</p>
+                    <p><strong>1918:</strong> تشكيل قسم الكشافة المستقبلية للشبان والشباب البالغين</p>
+                    <p><strong>1918:</strong> بداية الكشافة في العراق</p>
+                    <p><strong>1920:</strong> أول مهرجان كشفي عالمي مع 8,000 كشاف من 34 دولة</p>
+                    <p><strong>1920:</strong> إعلان اللورد بادن باول رئيسًا للكشافة</p>
+                    <p><strong>1926:</strong> تأسيس كشافة ذوي الإعاقة</p>
+                    <p><strong>1927:</strong> بداية الكشافة في الأردن</p>
+                    <p><strong>1928:</strong> تأسيس كشافة البحر</p>
+                    <p><strong>1930:</strong> تأسيس فرقة الكشافة وأصبحت الآنسة أولاف رئيسة دليل العالم</p>
+                    <p><strong>1941:</strong> وفاة اللورد روبرت ستيفنسون سميث بادن باول</p>
+                    <p><strong>1942:</strong> بداية الكشافة في المملكة العربية السعودية</p>
+                    <p><strong>1954:</strong> بداية الكشافة في ليبيا</p>
+                    <p><strong>1977:</strong> بداية الكشافة في دولة الإمارات العربية المتحدة</p>
+                </div>
+            </div>
+</body>
+</html>

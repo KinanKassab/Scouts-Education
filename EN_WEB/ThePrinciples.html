@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+
+    <style>
+     body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: ltr;
+            animation: fadeIn ease-in-out 1s;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_A_scout_leader_jotting_down_some_notes_while_imparting_2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop ease-in-out 1s;
+        }
+
+        h1, h2, p {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-size: 48px;
+            animation: fadeInLeft ease-in-out 1s;
+        }
+
+        h2 {
+            font-size: 40px;
+            animation: fadeInRight ease-in-out 1s;
+        }
+
+        p {
+            font-size: 28px; 
+            animation: fadeIn ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1; /* Added to keep navbar above the content */
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Content Styles */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        cursor: default;
+        font-size: 35px;
+        z-index: 0; /* Ensure content is behind navbar */
+    }
+    </style>
+    <title>Scout Movement Creation</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Photos/new logo.png" class="logo">
+        <ul>
+            <li><a href="Home.html" id="line">Home</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Skills</a>
+                <div class="dropdown-content">
+                    <a href="Codes.html">Scout Codes</a>
+                    <a href="TrackingTheTrail.html">Tracking the Trail</a>
+                    <a href="TheKnot.html">The Knot</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Information</a>
+                <div class="dropdown-content">
+                    <a href="LordStephenSmith.html">Lord Stephen Smith Baden-Powell</a>
+                    <a href="CreatingScout.html">Creating Scouts</a>
+                    <a href="Dates.html">Dates</a>
+                    <a href="TheBadgeAndTheMotto.html">The Badge and the Motto</a>
+                    <a href="ThePrinciples.html">The Principles</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12" style="text-align: right; direction: rtl;">
+                <div>
+                    <h1>Definition of the Scout Movement</h1>
+                    <p>The Scout Movement is an educational, voluntary, non-political movement open to all without distinction of origin, race, or creed, in accordance with the purpose, principles, and method expressed by its founder.</p>
+
+                    <h1>Objective of the Scout Movement</h1>
+                    <p>The objective of the Scout Movement is to contribute to the education and development of young people to achieve the fullest development of their spiritual, intellectual, social, and physical capacities as individuals and as responsible citizens in their local, national, and international communities.</p>
+
+                    <h1>The Scout Promise</h1>
+                    <p>I promise on my honor that I will do my best:</p>
+                    <p>To do my duty to God and my country.</p>
+                    <p>To help other people at all times.</p>
+                    <p>To obey the Scout Law.</p>
+
+                    <h1>Elements of the Scout Method:</h1>
+                    <p><strong>1. The Promise and Law</strong></p>
+                    <p><strong>2. The Badge and Proficiency System</strong></p>
+                    <p><strong>3. Life in the Outdoors</strong></p>
+                    <p><strong>4. The Small Group System</strong></p>
+                    <p><strong>5. Learning by Doing</strong></p>
+                    <p><strong>6. Adult Support</strong></p>
+                    <p><strong>7. Symbolic Framework</strong></p>
+                    <p><strong>8. Social Service</strong></p>
+
+                    <h1>Scout Laws</h1>
+                    <p>1. A Scout's honor is to be trusted.</p>
+                    <p>2. A Scout is loyal.</p>
+                    <p>3. A Scout's duty is to be useful and to help others.</p>
+                    <p>4. A Scout is a friend to all and a brother to every other Scout.</p>
+                    <p>5. A Scout is courteous.</p>
+                    <p>6. A Scout is a friend to animals and loves nature.</p>
+                    <p>7. A Scout obeys orders without question.</p>
+                    <p>8. A Scout smiles and whistles under all difficulties.</p>
+                    <p>9. A Scout is thrifty.</p>
+                    <p>10. A Scout is clean in thought, word, and deed.</p>
+
+                    <h1>The Principles</h1> 
+                    <p>1. Duty towards God and Country.</p>
+                    <p>2. Duty to Others.</p>
+                    <p>3. Duty to Self.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

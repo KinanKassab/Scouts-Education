@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            animation: fadeIn ease-in-out 1s;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/Default_A_group_of_scouts_in_uniform_on_a_morning_hike_located_2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop ease-in-out 1s;
+        }
+
+        h1, h2, p {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        h1 {    
+            font-size: 48px;
+            animation: fadeInLeft ease-in-out 1s;
+        }
+
+        h2 {
+            font-size: 40px;
+            animation: fadeInRight ease-in-out 1s;
+        }
+
+        p {
+            font-size: 28px; 
+            animation: fadeIn ease-in-out 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1; /* Added to keep navbar above the content */
+    }
+    .logo {
+        width: 120px;
+        cursor: pointer;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .navbar ul li a:hover {
+        color: #eee;
+    }
+    .navbar ul li#line::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: rgb(110,32, 160);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 2rem;
+    }
+    .navbar ul li#line:hover::after {
+        width: 100%;
+    }
+
+    /* Styles for Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.09);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Content Styles */
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        cursor: default;
+        font-size: 35px;
+        z-index: 0; /* Ensure content is behind navbar */
+    }
+    </style>
+    <title>تاسيس الكشاف وارثها</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Photos/new logo.png" class="logo">
+        <ul>
+            <li><a href="Home.html" id="line">الرئيسية</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">المهارات الكشفية</a>
+                <div class="dropdown-content">
+                    <a href="Codes.html">الشيفرات </a>
+                    <a href="TrackingTheTrail.html">تتبع الأثر</a>
+                    <a href="TheKnot.html">العقد</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">المعلومات</a>
+                <div class="dropdown-content">
+                    <a href="LordStephenSmith.html">لورد ستيفن سميث بادن باول</a>
+                    <a href="CreatingScout.html">تأسيس الحركة الكشفية</a>
+                    <a href="Dates.html">التواريخ</a>
+                    <a href="TheBadgeAndTheMotto.html">الشارة والشعار</a>
+                    <a href="ThePrinciples.html">القوانين</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">اتصل بنا</a></li>
+        </ul>
+    </div>
+<div class="container">
+    <h1>تأسيس الكشافة</h1>
+    <p>تأسس الكشافة في العام 1907 على يد روبرت بادن باول، الذي كان ضابطاً بالجيش البريطاني في جنوب أفريقيا. خلال خدمته هناك، لاحظ بادن باول أهمية تنمية مهارات الشباب في البقاء على قيد الحياة والخدمة للمجتمع. بادن باول نظم أول مجموعة للكشافة في جنوب أفريقيا، وبدأ بتطوير مبادئ وأنشطة الكشافة التي تركز على التحدي والمغامرة وخدمة المجتمع.</p>
+    <p>تم اعتماد مفهوم الكشافة وتوسيعه على نطاق واسع بسرعة في جميع أنحاء العالم. وفي عام 1908، أسس بادن باول الحركة الكشفية العالمية، وقدم كتابه الشهير "الكتيب الكشفي"، الذي يحتوي على مبادئ وممارسات الكشافة. منذ ذلك الحين، نمت الكشافة لتصبح حركة عالمية تهدف إلى تنمية شبابية نشطة ومسؤولة من خلال التعلم العملي والخدمة المجتمعية والمغامرة في الطبيعة.</p>
+    <p>تعتمد الكشافة على مجموعة من المبادئ الأساسية مثل الوفاء بالواجب، والمساعدة للآخرين، والإيمان بالله، والانضباط الذاتي، وتحمل المسؤولية، والانفتاح على العالم. تتنوع أنشطة الكشافة من التخييم والتنزه في الطبيعة إلى الخدمة المجتمعية وتعلم المهارات الحياتية.</p>
+    <p>تتواجد الكشافة اليوم في معظم دول العالم وتشكل شبكة واسعة من المنظمات المحلية والوطنية والإقليمية والعالمية، تعمل على تنمية الشباب وتعزيز قيم المواطنة والتعاون والمسؤولية الاجتماعية.</p>
+</div>
+</body>
+</html>
