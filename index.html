@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="icon" href="Photos/new logo.png" type="image/x-icon">
-<link rel="stylesheet" href="style-in.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scout Homepage</title>
-<style>
-  
-</style>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Photos/new logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scout Homepage</title>
+    <style>
+        /* Reset */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Banner Styles */
+        .banner {
+            width: 100%;
+            min-height: 60vw; /* Adjusted min-height for better responsiveness */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Photos/index.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Content Styles */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            cursor: default;
+            font-size: 4vw; /* Changed font size to be responsive */
+            z-index: 0; /* Ensure content is behind navbar */
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 1.5vw 4vw; /* Adjusted padding for better responsiveness */
+            background-color: rgba(255, 255, 255, 0.09);
+            color: #fff;
+            text-decoration: none;
+            margin: 1vw;
+            border-radius: 1rem;
+            font-size: 4vw; /* Changed font size to be responsive */
+        }
+
+        /* Hover Effects */
+        .button:hover {
+            background-color: #fff;
+            color: #000;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
 </head>
 <body>
     <div class="banner">
         <div class="content">
-            <h1>Choose Your Language</h1>
+            <h1><label>Choose Your Language</label></h1> <!-- Corrected the spelling of "label" -->
             <a href="EN_WEB/Home.html" class="button">EN</a>
             <a href="AR_WEB/Home.html" class="button">AR</a>
         </div>
     </div>
 </body>
-</html>

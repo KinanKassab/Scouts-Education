@@ -6,60 +6,40 @@
     <title>Tracking the Trail</title>
     <link rel="icon" href="../Photos/new logo.png" type="image/x-icon">
     <style>
-   body {
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             direction: ltr;
-            animation: fadeIn ease-in-out 1s;
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../Photos/Default_A_group_of_scouts_in_their_uniform_gathered_around_the_1 (1).jpg'); 
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../Photos/TrackingTheTrail.jpg); 
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .container {
-            display: flex;
-            justify-content: center;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 90%;
+            margin: auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            animation: slideInFromTop ease-in-out 1s;
-            align-items: center;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            align-content: center;
+            text-align: center;
         }
 
-        h1, h2, p {
-            color: rgb(255, 255, 255);
-            font-weight: bolder;
-        }
-
-        h1 {
-            font-size: 28px;
-            animation: fadeInLeft ease-in-out 1s;
-        }
-
-        h2 {
-            font-size: 24px;
-            animation: fadeInRight ease-in-out 1s;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         p {
-            font-size: 20PX;
-            animation: fadeIn ease-in-out 1s;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
-    .banner {
-        width: 100%;
-        min-height: 100vh; /* Changed height to min-height for content responsiveness */
-        position: relative;
-    }
-    .navbar {
+        .navbar {
         width: 85%;
         margin: auto;
         padding: 35px 0;
@@ -131,58 +111,57 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    
+
     </style>
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="../Photos/new logo.png" class="logo">
-            <ul>
-                <li><a href="Home.html" id="line">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn">Scout Skills</a>
-                    <div class="dropdown-content">
-                        <a href="Codes.html">Codes</a>
-                        <a href="TrackingTheTrail.html">Tracking the Trail</a>
-                        <a href="TheKnot.html">Knots</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a class="dropbtn">Information</a>
-                    <div class="dropdown-content">
-                        <a href="LordStephenSmith.html">Lord Stephen Smith Baden Powell</a>
-                        <a href="CreatingScout.html">The Foundation of Scouting Movement</a>
-                        <a href="Dates.html">Dates</a>
-                        <a href="TheBadgeAndTheMotto.html">The Badge and the Motto</a>
-                        <a href="ThePrinciples.html">The Principles</a>
-                    </div>
-                </li>
-                <li><a href="Contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-            <div class="container">
-                <img src="../Photos/TrackingTheTrail/Camp_from_here.jpg">
-                <p>Camp from here</p>
-                <img src="../Photos/TrackingTheTrail/Danger.jpg">
-                <p>Danger</p>
-                <img src="../Photos/TrackingTheTrail/Don't_walk_from_here.jpg">
-                <p>Don't walk from here</p>
-                <img src="../Photos/TrackingTheTrail/Message.JPG">
-                <p>Message</p>
-                <img src="../Photos/TrackingTheTrail/Potable_water.JPG">
-                <p>Potable water</p>
-                <img src="../Photos/TrackingTheTrail/Return_to_the_starting_point.jpg">
-                <p>Return to the starting point</p>
-                <img src="../Photos/TrackingTheTrail/Waiting.jpg">
-                <p>Waiting</p>
-                <img src="../Photos/TrackingTheTrail/Walk_from_here.jpg">
-                <p>Walk from here</p>
-                <img src="../Photos/TrackingTheTrail/Water_not_suitable_for_drinking.JPG">
-                <p>Water not suitable for drinking</p>
-                <img src="../Photos/TrackingTheTrail/We_divided_into_two_groups.jpg">
-                <p>We divided into two groups</p>
-            </div>
-        </div>
+    <div class="navbar">
+        <img src="../Photos/new logo.png" class="logo">
+        <ul>
+            <li><a href="Home.html" id="line">Home</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Scout Skills</a>
+                <div class="dropdown-content">
+                    <a href="Codes.html">Codes</a>
+                    <a href="TrackingTheTrail.html">Tracking the Trail</a>
+                    <a href="TheKnot.html">Knots</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Information</a>
+                <div class="dropdown-content">
+                    <a href="LordStephenSmith.html">Lord Stephen Smith Baden Powell</a>
+                    <a href="CreatingScout.html">The Foundation of Scouting Movement</a>
+                    <a href="Dates.html">Dates</a>
+                    <a href="TheBadgeAndTheMotto.html">The Badge and the Motto</a>
+                    <a href="ThePrinciples.html">The Principles</a>
+                </div>
+            </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="../Photos/TrackingTheTrail/Camp_from_here.jpg">
+        <p>Camp from here</p>
+        <img src="../Photos/TrackingTheTrail/Danger.jpg">
+        <p>Danger</p>
+        <img src="../Photos/TrackingTheTrail/Don't_walk_from_here.jpg">
+        <p>Don't walk from here</p>
+        <img src="../Photos/TrackingTheTrail/Message.JPG">
+        <p>Message</p>
+        <img src="../Photos/TrackingTheTrail/Potable_water.JPG">
+        <p>Potable water</p>
+        <img src="../Photos/TrackingTheTrail/Return_to_the_starting_point.jpg">
+        <p>Return to the starting point</p>
+        <img src="../Photos/TrackingTheTrail/Waiting.jpg">
+        <p>Waiting</p>
+        <img src="../Photos/TrackingTheTrail/Walk_from_here.jpg">
+        <p>Walk from here</p>
+        <img src="../Photos/TrackingTheTrail/Water_not_suitable_for_drinking.JPG">
+        <p>Water not suitable for drinking</p>
+        <img src="../Photos/TrackingTheTrail/We_divided_into_two_groups.jpg">
+        <p>We divided into two groups</p>
+    </div>
 </body>
 </html>
+

@@ -10,15 +10,15 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
-        direction: ltr; /* Change direction to left-to-right */
+        direction: ltr;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Photos/Home.jpg); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .banner {
         width: 100%;
         min-height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Photos/background.png'); 
-        background-size: cover;
-        background-position: center;
-        position: relative;
     }
     .navbar {
         width: 85%;
@@ -96,7 +96,8 @@
     /* Content Styles */
     .content {
         position: absolute;
-        top: 50%;
+        width: 100%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -104,6 +105,14 @@
         cursor: default;
         font-size: 35px;
         z-index: 0;
+    }
+    
+    .content h1{
+        font-size: 7vw;
+    }
+
+    .content p{
+        font-size: 3vw;
     }
 </style>
 </head>
@@ -138,6 +147,6 @@
             <h1>Information About Scouting</h1>
             <p>Enhance or build your scouting skills</p>
         </div>
-    </div>
+    </div>    
 </body>
 </html>
